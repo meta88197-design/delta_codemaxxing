@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --delta-paper: #f1f1f1;
+  --delta-ink: #0d0d0e;
+  --delta-muted: #58595d;
+  --delta-accent: #f4bf5f;
+  --delta-soft-orange: #f08e76;
+  --delta-charcoal: #1d1c21;
+  --delta-violet: #8d34bc;
+  --delta-blue: #262674;
+  --delta-azure: #2478c4;
+  --delta-fog: #d9dadb;
+  --delta-cta: #66676b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-exo2), sans-serif;
+  background: var(--delta-paper);
+  color: var(--delta-ink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-raleway), sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.bg-delta-paper {
+  background: var(--delta-paper);
+}
+
+.bg-delta-cta {
+  background: var(--delta-cta);
+}
+
+.text-delta-ink {
+  color: var(--delta-ink);
+}
+
+.bg-delta-accent {
+  background: var(--delta-accent);
+}
+
+.text-delta-soft-orange {
+  color: var(--delta-soft-orange);
+}
+
+.delta-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.blueprint-grid {
+  background-color: #ececec;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    repeating-linear-gradient(
+      150deg,
+      rgba(0, 0, 0, 0.04) 0,
+      rgba(0, 0, 0, 0.04) 2px,
+      transparent 2px,
+      transparent 86px
+    ),
+    repeating-linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.03) 0,
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 72px
+    );
+  background-size:
+    48px 48px,
+    48px 48px,
+    100% 100%,
+    100% 100%;
+}
